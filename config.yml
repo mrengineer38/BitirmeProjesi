@@ -1,0 +1,32 @@
+---
+default:
+  server:
+    port: 3000
+  database:
+    host: 'localhost'
+    port: 5432
+    db: 'star2online'
+    user: 'postgres'
+    pass: 'postgres'
+    max: 2
+  jwt:
+    secret: 'keychange'
+    expire: '24h'
+    algorithms: ['HS256']
+development:
+  database:
+    db: 'star2online'
+test:
+  database:
+    db: 'star2online'
+production:
+  server:
+    port: 8000
+  database:
+    db: 'star2online'
+    user: 'dbuser'
+    password: 'pass'
+  cache:
+    dir: 'static'
+
+  
